@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Election Bully Algorithm </title>
+  <style>
+    body{font-family:system-ui,Segoe UI,Roboto,Arial;margin:18px;background:#f8f8f8;color:#111}
+    h1{font-size:18px;margin-bottom:6px}
+    #controls{margin:12px 0}
+    button{margin-right:8px;padding:8px 12px;border-radius:6px;border:1px solid #010101;background:#ffffff;cursor:pointer}
+    button:active{transform:translateY(1px)}
+    svg{border:1px solid #000000;background:#dcdfcc;border-radius:6px}
+    .node{cursor:pointer}
+    .node circle{stroke:#2804f7;stroke-width:1.5}
+    .node text{font-size:12px;pointer-events:none}
+    .status{margin-top:8px;font-size:14px}
+    .failed circle{fill:#f8d7da;stroke:#a50313}
+    .coordinator circle{fill:#000000;stroke:#106802}
+    .normal circle{fill:#f5b3ff}
+    .message{fill:#e7ca2a}
+  </style>
+</head>
+<body>
+  <h1>Election Bully Algorithm</h1>
+
+  <div id="controls">
+    <button id="failBtn">Fail Coordinator</button>
+    <button id="startBtn">Start Election</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <svg id="stage" width="760" height="220" viewBox="0 0 760 220"></svg>
+  <div class="status" id="status">Status: Idle</div>
+
+  <!-- Hubungkan ke file JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
